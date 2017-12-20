@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+/*swatch reminder: beige, skyblue, goldenrod, black, ghostwhite*/
+header {
+  background: beige;
+  color: black;
+  background-color: beige;
+  font-size: 400%;
+  font-family: 'Oswald', sans-serif;
+  text-indent: 15%;
+  background-image: url("header.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: hue;
+}
+h1 { /* Site title */
+  font-family: 'Oswald', sans-serif;
+  font-size: 300%
+  }
+h2 { /* Genre title */
+  font-family: 'Oswald', sans-serif;
+  font-size: 200%
+  }
+h3 { /* Book title */
+  font-family: 'Oswald', sans-serif;
+  font-size: 150%;
+  line-height: 50%;
+  }
+h4 { /* Author name */
+  font-family: 'Oswald', sans-serif;
+  font-size: 125%;
+  line-height: 50%;
+  margin-left: 5px;
+  }
+h5 { /* Suggestions */
+  font-family: 'Oswald', sans-serif;
+  font-size: 100%;
+  line-height: 20%;
+  }
+h6 { /* Copyright */
+  font-family: 'Oswald', sans-serif;
+  font-size: 70%;
+  font-weight: bold;
+}
+p { /* Regular text */
+  font-family: 'Spectral', serif;
+  font-size: 100%;
+  float: inherit;
+  margin-left: 5px;
+}
+ul {
+  list-style-type: none;
+}
+nav ul {
+  margin: 0;
+  text-indent: 5px;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  display: block;
+}
+nav li {
+  float: left;
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: skyblue;
+  color: black;
+}
+footer{
+  background-color: black;
+  background: black;
+  color: white;
+  width: 100%;
+  clear: both;
+  position: absolute;
+  text-align: left;
+  text-indent: 5px;
+  font-family: 'Spectral', serif;
+  clear: both;
+}
+body { /* Body text */
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  font-family: 'Spectral', serif;
+  font-size: 100%;
+  clear: both;
+  background-color: ghostwhite;
+}
+button {
+  background-color: skyblue;
+  border: 3px solid black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  transition-duration: 0.4s;
+  font-family: 'Oswald', sans-serif;
+  float: left;
+  cursor: pointer;
+}
+.clear {
+  clear: both;
+  content: "";
+  float: none;
+  display: table;
+}
+article {
+  padding: 5%;
+  outline: 5px;
+  outline-color: black;
+  outline-style: solid;
+  margin: 5%;
+  background-color: beige;
+}
+#peeps {
+  padding: 5px;
+  padding-right: 3%;
+}
+#author {
+  padding: 5px;
+  padding-right: 3%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+#entry {
+  padding: 5%;
+  margin: 5%;
+  border: 5px;
+  border-style: solid;
+  border-color: black;
+  background-color: ghostwhite;
+}
+#books {
+  padding: 5px;
+  padding-right: 3%;
+  clear: both;
+  height: 20%;
+  width: 20%;
+}
+#container {
+  padding: 0;
+  margin: 0;
+  border: 5px;
+  border-style: solid;
+  border-color: black;
+  background-color: beige;
+}
+iframe {
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#pricetag {
+  text-indent: 10px;
+  line-height: 100%;
+}
+#container2 {
+  padding: 5%;
+  margin: 5%;
+  border-style: none;
+  background-color: ghostwhite;
+}
+#entry2 {
+  padding: 5%;
+  margin: 5%;
+  border: 5px;
+  border-style: solid;
+  border-color: black;
+  background-color: beige;
+}
+#author2 {
+  padding: 5px;
+  padding-right: 3%;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+table {
+  border-spacing: 5px;
+}
+table#t01 th {
+  color: white;
+  font-size: 80%;
+  line-height: 50%;
+  font-family: 'Oswald', sans-serif;
+}
+table#t01 td {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 80%;
+  line-height: 70%;
+}
+.uniform {
+  padding: 15%;
+}
+.stars {
+  width: 50%;
+  float: left;
+}
+.seagulls {
+  width: 50%;
+  float: right;
+}
+#unicorn {
+  width: 300px;
+}
+.chicken {
+  width: 40%;
+  float: left;
+}
+.soup {
+  width: 40%;
+  float: right;
+}
+.crisp {
+  width: 100%;
+  clear: both;
+}
+li a:hover {
+  color: red;
+}

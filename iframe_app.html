@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title>Hanaki Press - Bookstore</title>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Spectral');
+  @import url('https://fonts.googleapis.com/css?family=Oswald');
+  section { /* Bookshelf Frame */
+    display: block;
+    float: left;
+    border: 5px solid black;
+    height: auto;
+    width: 99%;
+    border-radius: 4px;
+    background-color: beige;
+  }
+  a { /* Genre toolbar elements */
+    display: inline;
+    white-space: nowrap;
+    float: left;
+    width: 14.284%;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 0;
+    color: black;
+  }
+  h2 { /* Tabs style */
+    font-family: 'Oswald', sans-serif;
+    font-size: 80%;
+  }
+  div { /* Book covers */
+   display:block;
+   float:left;
+   height:120px;
+   width:80px;
+   margin:21.5px;
+   transition: 2s;
+   transition-property: all;
+   transition-timing-function: ease-in-out;
+   margin-top: 20px;
+  }
+  div[books="non"]{ /* Nonfiction */
+    background: none;
+    overflow: hidden;
+  }
+  div[books="sci"]{ /* SciFi */
+    background: none;
+    overflow: hidden;
+  }
+  div[books="fan"]{ /* Fantasy */
+    background: none;
+    overflow: hidden;
+  }
+  div[books="hor"]{ /* Horror */
+    background: none;
+    overflow: hidden;
+  }
+  div[books="mys"]{ /* Mystery */
+    background: none;
+    overflow: hidden;
+  }
+  div[books="rom"]{ /* Adventure */
+    background: none;
+    overflow: hidden;
+  }
+  a[books="non"]:focus ~ div:not([books="non"]){ /* Nonfiction */
+    height:0px;
+    width:0px;
+    border:none;
+    margin:0;
+  }
+  a[books="sci"]:focus ~ div:not([books="sci"]){ /* SciFi */
+    height:0px;
+    width:0px;
+    border:none;
+    margin:0;
+  }
+  a[books="fan"]:focus ~ div:not([books="fan"]){ /* Fantasy */
+    height:0px;
+    width:0px;
+    border:none;
+    margin:0;
+  }
+  a[books="hor"]:focus ~ div:not([books="hor"]){ /* Horror */
+    height:0px;
+    width:0px;
+    border:none;
+    margin:0;
+  }
+  a[books="mys"]:focus ~ div:not([books="mys"]){ /* Mystery */
+    height:0px;
+    width:0px;
+    border:none;
+    margin:0;
+  }
+  a[books="rom"]:focus ~ div:not([books="rom"]){ /* Adventure */
+    height:0px;
+    width:0px;
+    border:none;
+    margin:0;
+  }
+  </style>
+  <section>
+  <a href="#" books="non"><h2>Crime Fiction</h2></a>
+  <a href="#" books="sci"><h2>Sci-Fi</h2></a>
+  <a href="#" books="fan"><h2>Fantasy</h2></a>
+  <a href="#" books="hor"><h2>Horror</h2></a>
+  <a href="#" books="mys"><h2>Mystery</h2></a>
+  <a href="#" books="rom"><h2>Romance</h2></a>
+  <a href="#" books="all"><h2>All</h2></a>
+  <!-- You could change these all to images, if you wanted to -->
+  <div books="sci">
+    <a target="_top" href="watanabe.html#akairo">
+      <img src="images/book01.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="rom">
+    <a target="_top" href="chiba.html#iikiri">
+      <img src="images/book02.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="fan">
+    <a target="_top" href="watanabe.html#shindoshi">
+      <img src="images/book03.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="fan">
+    <a target="_top" href="matsuhisa.html#hitomi">
+      <img src="images/book04.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="mys">
+    <a target="_top" href="kanno.html#kyojin">
+      <img src="images/book05.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="hor">
+    <a target="_top" href="chiba.html#kokumajutsu">
+      <img src="images/book06.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="non">
+    <a target="_top" href="watanabe.html#ikunangaku">
+      <img src="images/book07.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="sci">
+    <a target="_top" href="matsuhisa.html#tenmei">
+      <img src="images/book08.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="rom">
+    <a target="_top" href="chiba.html#nonake">
+      <img src="images/book09.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="non">
+    <a target="_top" href="oyokami.html#kakeru">
+      <img src="images/book10.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="mys">
+    <a target="_top" href="watanabe.html#tengoku">
+      <img src="images/book11.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="mys">
+    <a target="_top" href="oyokami.html#fushigi">
+      <img src="images/book12.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="rom">
+    <a target="_top" href="chiba.html#saiyuki">
+      <img src="images/book14.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="fan">
+    <a target="_top" href="kanno.html#yaso">
+      <img src="images/book15.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="sci">
+    <a target="_top" href="oyokami.html#magatama">
+      <img src="images/book16.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="mys">
+    <a target="_top" href="watanabe.html#kuroi">
+      <img src="images/book17.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="fan">
+    <a target="_top" href="chiba.html#suzaku">
+      <img src="images/book18.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="sci">
+    <a target="_top" href="kanno.html#jinzo">
+      <img src="images/book19.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="non">
+    <a target="_top" href="chiba.html#wakatte">
+      <img src="images/book20.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="hor">
+    <a target="_top" href="chiba.html#kaze">
+      <img src="images/book21.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="mys">
+    <a target="_top" href="chiba.html#midori">
+      <img src="images/book22.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="hor">
+    <a target="_top" href="oyokami.html#hitori">
+      <img src="images/book24.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="rom">
+    <a target="_top" href="chiba.html#tsukiakari">
+      <img src="images/book25.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="non">
+    <a target="_top" href="matsuhisa.html#handan">
+      <img src="images/book26.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="fan">
+    <a target="_top" href="kanno.html#sakura">
+      <img src="images/book27.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="hor">
+    <a target="_top" href="matsuhisa.html#taita">
+      <img src="images/book28.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="rom">
+    <a target="_top" href="matsuhisa.html#kanashimi">
+      <img src="images/book29.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="fan">
+    <a target="_top" href="kanno.html#aku">
+      <img src="images/book30.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="mys">
+    <a target="_top" href="watanabe.html#hyohaku">
+      <img src="images/book31.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="mys">
+    <a target="_top" href="oyokami.html#tensei">
+      <img src="images/book32.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="hor">
+    <a target="_top" href="matsuhisa.html#bakuneko">
+      <img src="images/book33.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="hor">
+    <a target="_top" href="watanabe.html#mugen">
+      <img src="images/book34.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="sci">
+    <a target="_top" href="matsuhisa.html#owari">
+      <img src="images/book35.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="mys">
+    <a target="_top" href="oyokami.html#kuroi">
+      <img src="images/book36.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="mys">
+    <a target="_top" href="oyokami.html#yami">
+      <img src="images/book37.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="non">
+    <a target="_top" href="watanabe.html#uchu">
+      <img src="images/book38.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="non">
+    <a target="_top" href="kanno.html#kogane">
+      <img src="images/book39.png" height="110px", width="80px">
+    </a>
+  </div>
+  <div books="rom">
+    <a target="_top" href="kanno.html#nageku">
+      <img src="images/book40.png" height="110px", width="80px">
+    </a>
+  </div>
+</section>
+</html>
